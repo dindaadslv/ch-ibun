@@ -40,7 +40,7 @@ export default function Navbar() {
               <Link 
                 key={item.name} 
                 href={item.href}
-                className="text-white hover:bg-white hover:bg-opacity-20 px-4 py-2 rounded-lg font-medium transition duration-200"
+                className="text-white hover:bg-black hover:bg-opacity-20 px-4 py-2 rounded-lg font-medium transition duration-200"
               >
                 {item.name}
               </Link>
@@ -51,7 +51,7 @@ export default function Navbar() {
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white hover:bg-white hover:bg-opacity-20 p-2 rounded-lg focus:outline-none transition"
+              className="text-white hover:bg-black hover:bg-opacity-20 p-2 rounded-lg focus:outline-none transition"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMobileMenuOpen ? (
@@ -74,7 +74,7 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)} 
-                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-white hover:bg-opacity-20 transition"
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-black hover:bg-opacity-20 transition"
               >
                 {item.name}
               </Link>
